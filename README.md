@@ -44,4 +44,4 @@ A simple **Tic Tac Toe** game built using **HTML, CSS, and JavaScript**. Play ag
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License** – you’re free to use, modify, and share it.  
+This project is licensed under the **Apache License 2.0** – you’re free to use, modify, and share it.  
