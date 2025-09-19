@@ -89,7 +89,7 @@ main{
     background:#17122A;
     padding-top:8px;
     padding-bottom:8px;
-    border:none;
+    border:solid 1.5px #04055b;
     border-radius:12px;
     font-weight:600;
     font-size:16px;
@@ -97,6 +97,6 @@ main{
     transition:0.3s background;
     /*visibility: hidden; */
 }
-#restartbtn:hover {
+#Restartbtn:hover{
     background: #2A2343;
 }
