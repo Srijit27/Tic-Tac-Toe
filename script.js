@@ -23,7 +23,7 @@ cells.forEach((cell,index)=> {
 
 function Celltap(cell,index){
     //Ensuring that no cell is empty and the game is not paused
-    if(cell.textContent==='' && !gamePause){
+    if(cell.textContent==='' && !gamePause){ //if game is paused then gamePause=false, ! value gives true which will satisfy the condition
         gameStart=true
         Cellupdate(cell,index)
         if(!winner()){
@@ -66,4 +66,20 @@ function Pickrandom(){
         }
         player=(player=='X')?'O':'X'
     }, 1000) // Delay Computer move by 1 second
+}
+
+function checkWinner(){
+    for(const[a,b,c] of winConditions){
+        // Check each winning condition
+        if(inputCells[a]==player && inputCells[b]==player && inputCells[c] == player)
+        {
+            declareWinner([a, b, c])
+            return true
+        }
+    }
+    // Check for a draw (if all cells are filled)
+    if(inputCells.every(cell=>cell!='')){
+        declareDraw()
+        return true
+    }
 }
