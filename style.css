@@ -95,7 +95,7 @@ main{
     font-size:16px;
     cursor:pointer;
     transition:0.3s background;
-    /*visibility: hidden; */
+    visibility: hidden;
 }
 #Restartbtn:hover{
     background: #2A2343;

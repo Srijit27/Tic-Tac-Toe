@@ -1,7 +1,8 @@
 const cells=document.querySelectorAll('.cell')
 const titleHead=document.querySelector('#titleHeader')
 const player_x=document.querySelector('#playerX')
-const player_y=document.querySelector('#Restartbtn')
+const player_y=document.querySelector('#playerY')
+const Restartbtn=document.querySelector('Restartbtn')
 
 //initialised the variables
 let player='X'
@@ -82,4 +83,14 @@ function checkWinner(){
         declareDraw()
         return true
     }
+}
+
+function declareWinner(winningIndices) {
+    titleHead.textContent = `${player} Win`
+    isPauseGame = true
+    // Highlight winning cells
+    winningIndices.forEach((index) =>
+        cells[index].style.background = '#2A2343'
+    )
+    restartBtn.style.visibility = 'visible'
 }
