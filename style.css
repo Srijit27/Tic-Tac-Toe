@@ -8,6 +8,17 @@
     color:white;
 }
 
+.container{
+    background:#020532;
+    height:auto;
+    padding-top:250px;
+    padding-bottom:200px;
+    padding-left:150px;
+    padding-right:150px;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align:center;
+}
+
 main{
     background: #0A0519;
     height:100vh;
@@ -97,6 +108,7 @@ main{
     transition:0.3s background;
     visibility: hidden;
 }
+
 #Restartbtn:hover{
     background: #2A2343;
 }
