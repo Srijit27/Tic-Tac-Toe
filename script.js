@@ -119,7 +119,6 @@ function selectPlayer(secP){
     }
 }
 
-
 Restartbtn.addEventListener('click',()=>{
     Restartbtn.style.visibility='hidden'
     inputCells.fill('')
