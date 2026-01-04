@@ -21,9 +21,9 @@ A simple **Tic Tac Toe** game built using **HTML, CSS, and JavaScript**. Play ag
 
 ## 📂 Project Structure
 📦 Tic-Tac-Toe  
- ┣ 📜 index.html        
+ ┣ 📜 struct.html        
  ┣ 📜 style.css         
- ┣ 📜 script.js         
+ ┣ 📜 logic.js         
  ┗ 📜 README.md        
 
 ---
